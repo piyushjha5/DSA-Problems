@@ -14,17 +14,17 @@ public class SpiralMatrix {
             }
             startRow++;
             //Right
-            for(int i = startRow+1; i <= endRow; i++) {
+            for(int i = startRow; i <= endRow; i++) {
                 System.out.print(array[i][endCol]+" ");
             }
             endCol--;
             //Down
-            for(int j = endCol-1; j >= startCol; j--) {
+            for(int j = endCol; j >= startCol; j--) {
                 System.out.print(array[endRow][j]+" ");
             }
             endRow--;
             //Left
-            for(int i = endRow-1; i >= startRow+1; i--) {
+            for(int i = endRow; i >= startRow; i--) {
                 System.out.print(array[i][startCol]+" ");
             }
             startCol++;
