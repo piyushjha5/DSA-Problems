@@ -11,23 +11,23 @@ public class SpiralMatrix {
             //top
             for(int j = startCol; j <= endCol; j++) {
                 System.out.print(array[startRow][j]+" ");
-                startRow++;
             }
+            startRow++;
             //Right
             for(int i = startRow+1; i <= endRow; i++) {
                 System.out.print(array[i][endCol]+" ");
-                endCol--;
             }
+            endCol--;
             //Down
             for(int j = endCol-1; j >= startCol; j--) {
                 System.out.print(array[endRow][j]+" ");
-                endRow--;
             }
+            endRow--;
             //Left
             for(int i = endRow-1; i >= startRow+1; i--) {
                 System.out.print(array[i][startCol]+" ");
-                startCol++;
             }
+            startCol++;
         }
     }
 
